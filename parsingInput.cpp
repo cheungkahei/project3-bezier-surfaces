@@ -1,3 +1,11 @@
+#include <fstream>
+#include <sstream>
+#include <vector>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 struct BezierPatch {
 	// 16 control points --> 4 Bezier curves
 	vector<vector> curve1;
