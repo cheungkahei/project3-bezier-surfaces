@@ -30,5 +30,7 @@ int main(int argc, char *argv[]) {
 
   cout << "Please enter a command";
   getline (cin,str); 
+  interpreter_t(commandLine); //parses filename, subdiv value and flag (part 10)
+
   
 };
