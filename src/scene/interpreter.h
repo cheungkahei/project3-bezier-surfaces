@@ -4,7 +4,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <scene/scene.h>
 
 namespace interpreter {
 
@@ -15,17 +14,10 @@ namespace interpreter {
 	{
 	 	public:
 			interpreter_t(){};
-			interpreter_t(const std::string& filename, 
-					scene_t& scene);
+			interpreter_t();
 
-			int read(const std::string& filename,
-					scene_t& scene);
-
-			void clear();
+			int read(const std::string& commandLine);
 	};
 }
 
 #endif
-
-
-
