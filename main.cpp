@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
   initScene();              // quick function to set up scene
 
   cout << "Please enter a command";
-  getline (cin,str); 
+  getline (cin,commandLine); 
   interpreter_t(commandLine); //parses filename, subdiv value and flag (part 10)
 
   
