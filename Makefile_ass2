@@ -1,0 +1,10 @@
+CC = gcc
+CFLAGS = -g -Wall
+
+default: as2
+
+as2: 
+	$(CC) $(CFLAGS) -o as2 Main.c Camera.c Color.c Film.c Light.c Material.c Matrix.c Point.c 
+	
+clean:
+	$(RM) as2
